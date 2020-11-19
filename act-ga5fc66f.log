@@ -1,0 +1,350 @@
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading environment from /home/wink/prgs/github-actions/tests/gha-test-set-env-var/.env"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading secrets from "
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading workflows from '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.github/workflows'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Reading workflow '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.github/workflows/set-env-var.yml'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Planning event: push"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: RunContext vmEnv rc.GetEnv=map[ACT:true]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: RunContext.func:+ vmEnv call ################# vm.Set(\"env\", rc.GetEnv()=map[ACT:true])"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: RunContext.func:- vmEnv"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: NewPlanExecutor jobName='test-set-env-var/test' ctx=&context.valueCtx{Context:(*context.cancelCtx)(0xc000448180), key:\"dryrun\", val:false}"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: NewPlanExecutor ctx v=&context.valueCtx{Context:(*context.cancelCtx)(0xc000448180), key:\"dryrun\", val:false}"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: NewPlanExecutor ctx +v=&context.valueCtx{Context:(*context.cancelCtx)(0xc000448180), key:\"dryrun\", val:false}"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: NewPlanExecutor ctx #v=&context.valueCtx{Context:(*context.cancelCtx)(0xc000448180), key:\"dryrun\", val:false}"
+[test-set-env-var/test] 🚀  Start image=node:12.6-buster-slim
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="using github ref: refs/heads/main"
+[test-set-env-var/test]   🐳  docker pull node:12.6-buster-slim
+time="2020-11-19T10:45:04-08:00" level=debug msg="Image exists? true"
+[test-set-env-var/test]   🐳  docker create image=node:12.6-buster-slim entrypoint=["/usr/bin/tail" "-f" "/dev/null"] cmd=[]
+[test-set-env-var/test] Created container name=act-test-set-env-var-test id=9f4fa7ba59462636c91eaf0269ea49fe9ffdbd3961f639f234cd6514a377cdf9 from image node:12.6-buster-slim
+[test-set-env-var/test] ENV ==> [RUNNER_TOOL_CACHE=/opt/hostedtoolcache RUNNER_OS=Linux RUNNER_TEMP=/tmp]
+[test-set-env-var/test]   🐳  docker run image=node:12.6-buster-slim entrypoint=["/usr/bin/tail" "-f" "/dev/null"] cmd=[]
+[test-set-env-var/test] Starting container: 9f4fa7ba59462636c91eaf0269ea49fe9ffdbd3961f639f234cd6514a377cdf9
+[test-set-env-var/test] Started container: 9f4fa7ba59462636c91eaf0269ea49fe9ffdbd3961f639f234cd6514a377cdf9
+[test-set-env-var/test]   🐳  docker cp src=/home/wink/prgs/github-actions/tests/gha-test-set-env-var/. dst=/github/workspace
+[test-set-env-var/test] Exec command '[mkdir -p /github/workspace]'
+time="2020-11-19T10:45:04-08:00" level=debug msg="Writing tarball /tmp/act016616451 from /home/wink/prgs/github-actions/tests/gha-test-set-env-var/."
+time="2020-11-19T10:45:04-08:00" level=debug msg="Stripping prefix:/home/wink/prgs/github-actions/tests/gha-test-set-env-var/ src:/home/wink/prgs/github-actions/tests/gha-test-set-env-var/."
+[test-set-env-var/test] Extracting content from '/tmp/act016616451' to '/github/workspace'
+time="2020-11-19T10:45:04-08:00" level=debug msg="Writing entry to tarball workflow/event.json len:2"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Writing entry to tarball home/.act len:0"
+[test-set-env-var/test] Extracting content to '/github/'
+time="2020-11-19T10:45:04-08:00" level=debug msg="WiNK: call sc.setupEnv()(ctx)"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv rc.GetEnv()=map[ACT:true]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv step.GetEnv()=map[]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func:+ *********************"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func: rc.GetEnv()=map[ACT:true]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func: step.GetEnv()=map[]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func mergeMaps 2 rc, step"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func env=map[ACT:true]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func Interpolate k=ACT v=true env[k]=true"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func Interpolate env[k]=true"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="setupEnv => map[ACT:true CI:true GITHUB_ACTION:0 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func:- ******************************"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: RunContext vmEnv rc.GetEnv=map[ACT:true]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: RunContext.func:+ vmEnv call ################# vm.Set(\"env\", rc.GetEnv()=map[ACT:true])"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: RunContext.func:- vmEnv"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: StepContext vmEnv sc.GetEnv=map[ACT:true CI:true GITHUB_ACTION:0 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: StepContext.func:+ vmEnv call !!!!!!!!!!!!!!!!! vm.Set(\"env\", sc.Env=map[ACT:true CI:true GITHUB_ACTION:0 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home])"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: StepContext.func:- vmEnv"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WiNK: done NewExpressionEvaluator()"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: newStepExecutor.func:+ Run &{RunContext:test-set-env-var/test Step:step1 Env:map[ACT:true CI:true GITHUB_ACTION:0 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home] Cmd:[] Action:<nil>}"
+[test-set-env-var/test] ⭐  Run step1
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK:+ Executor: sc=&{RunContext:test-set-env-var/test Step:step1 Env:map[ACT:true CI:true GITHUB_ACTION:0 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home] Cmd:[] Action:<nil>}"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK:- Executor: sc=&{RunContext:test-set-env-var/test Step:step1 Env:map[ACT:true CI:true GITHUB_ACTION:0 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home] Cmd:[] Action:<nil>}"
+[test-set-env-var/test] Skipping actions/checkout
+[test-set-env-var/test]   ✅  Success - step1
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: newStepExecutor.func:- Run sc=&{RunContext:test-set-env-var/test Step:step1 Env:map[ACT:true CI:true GITHUB_ACTION:0 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home] Cmd:[] Action:<nil>} rc.StepResults=&{Success:true Outputs:map[]} rc.GetEnv=map[ACT:true]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WiNK: call sc.setupEnv()(ctx)"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv rc.GetEnv()=map[ACT:true]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv step.GetEnv()=map[INPUT_PYTHON-VERSION:3.7]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func:+ *********************"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func: rc.GetEnv()=map[ACT:true]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func: step.GetEnv()=map[INPUT_PYTHON-VERSION:3.7]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func mergeMaps 2 rc, step"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func env=map[ACT:true INPUT_PYTHON-VERSION:3.7]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func Interpolate k=ACT v=true env[k]=true"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func Interpolate env[k]=true"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func Interpolate k=INPUT_PYTHON-VERSION v=3.7 env[k]=3.7"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func Interpolate env[k]=3.7"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="setupEnv => map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupEnv.func:- ******************************"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: RunContext vmEnv rc.GetEnv=map[ACT:true]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: RunContext.func:+ vmEnv call ################# vm.Set(\"env\", rc.GetEnv()=map[ACT:true])"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: RunContext.func:- vmEnv"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: StepContext vmEnv sc.GetEnv=map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: StepContext.func:+ vmEnv call !!!!!!!!!!!!!!!!! vm.Set(\"env\", sc.Env=map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7])"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: StepContext.func:- vmEnv"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WiNK: done NewExpressionEvaluator()"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: newStepExecutor.func:+ Run &{RunContext:test-set-env-var/test Step:step2 Env:map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7] Cmd:[] Action:<nil>}"
+[test-set-env-var/test] ⭐  Run step2
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK:+ Executor: sc=&{RunContext:test-set-env-var/test Step:step2 Env:map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7] Cmd:[] Action:<nil>}"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: setupAction: sc=&{RunContext:test-set-env-var/test Step:step2 Env:map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7] Cmd:[] Action:<nil>} actionDir=/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-name1 actionPath="
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: runAction: sc=&{RunContext:test-set-env-var/test Step:step2 Env:map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7] Cmd:[] Action:<nil>}"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK:- Executor: sc=&{RunContext:test-set-env-var/test Step:step2 Env:map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7] Cmd:[] Action:<nil>}"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Read action &{set-env-name1  Set enviornemt variable name1 to valu1 map[python-version:{Python version true }] map[] {docker map[]  Dockerfile [] [${{ inputs.python-version }}]} { }} from '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-name1/action.yml'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="About to run action &{set-env-name1  Set enviornemt variable name1 to valu1 map[python-version:{Python version true }] map[] {docker map[]  Dockerfile [] [${{ inputs.python-version }}]} { }}"
+time="2020-11-19T10:45:04-08:00" level=debug msg="type=2 actionDir=/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-name1 actionPath= Workdir=/home/wink/prgs/github-actions/tests/gha-test-set-env-var ActionCacheDir=/home/wink/.cache/act actionName=actions/docker-local-set-env-name1 containerActionDir=/github/workspace"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: newStepContainer sc=&{RunContext:test-set-env-var/test Step:step2 Env:map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7] Cmd:[] Action:0xc0001fa340} cmd=[${{ inputs.python-version }}] entryPoint=[]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: RunContext vmEnv rc.GetEnv=map[ACT:true]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: RunContext.func:+ vmEnv call ################# vm.Set(\"env\", rc.GetEnv()=map[ACT:true])"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: RunContext.func:- vmEnv"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: StepContext vmEnv sc.GetEnv=map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7]"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: StepContext.func:+ vmEnv call !!!!!!!!!!!!!!!!! vm.Set(\"env\", sc.Env=map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7])"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WIHK: StepContext.func:- vmEnv"
+time="2020-11-19T10:45:04-08:00" level=debug msg="Evaluating 'inputs['python-version']' instead of 'inputs.python-version'"
+time="2020-11-19T10:45:04-08:00" level=debug msg="WINK: Evaluated ret: 'inputs['python-version']' val='3.7'"
+[test-set-env-var/test]   🐳  docker build -t act-actions-docker-local-set-env-name1:latest /home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-name1
+[test-set-env-var/test] Building image from '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-name1'
+time="2020-11-19T10:45:04-08:00" level=debug msg="Creating archive for build context dir '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-name1' with relative dockerfile 'Dockerfile'"
+[test-set-env-var/test] Creating image from context dir '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-name1' with tag 'act-actions-docker-local-set-env-name1:latest'
+[test-set-env-var/test] Step 1/4 : FROM alpine:3.10
+[test-set-env-var/test] 
+[test-set-env-var/test]  ---> be4e4bea2c2e
+[test-set-env-var/test] Step 2/4 : COPY entrypoint.sh /entrypoint.sh
+[test-set-env-var/test] 
+[test-set-env-var/test]  ---> Using cache
+[test-set-env-var/test]  ---> 09c31ff1b03a
+[test-set-env-var/test] Step 3/4 : RUN chmod +x /entrypoint.sh
+[test-set-env-var/test] 
+[test-set-env-var/test]  ---> Using cache
+[test-set-env-var/test]  ---> 2d4de53386e5
+[test-set-env-var/test] Step 4/4 : ENTRYPOINT ["/entrypoint.sh"]
+[test-set-env-var/test] 
+[test-set-env-var/test]  ---> Using cache
+[test-set-env-var/test]  ---> 24a810818467
+[test-set-env-var/test] Unable to handle line: {"aux":{"ID":"sha256:24a8108184674a290f40a90e1855bf6791b55b66306d99315b7797c5a7b93695"}}
+[test-set-env-var/test] Successfully built 24a810818467
+[test-set-env-var/test] Successfully tagged act-actions-docker-local-set-env-name1:latest
+[test-set-env-var/test]   🐳  docker pull act-actions-docker-local-set-env-name1:latest
+time="2020-11-19T10:45:04-08:00" level=debug msg="Image exists? true"
+[test-set-env-var/test]   🐳  docker create image=act-actions-docker-local-set-env-name1:latest entrypoint=[] cmd=["3.7"]
+[test-set-env-var/test] Created container name=act-test-set-e-1 id=7bf7caabe9000619746e098c5965037946c1bc7bdf10fdab0d70f178ff8cce17 from image act-actions-docker-local-set-env-name1:latest
+[test-set-env-var/test] ENV ==> [GITHUB_RUN_NUMBER=1 GITHUB_EVENT_PATH=/github/workflow/event.json GITHUB_EVENT_NAME=push GITHUB_RUN_ID=1 HOME=/github/home GITHUB_WORKFLOW=test-set-env-var GITHUB_SHA=4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_REPOSITORY=winksaville/gha-test-set-env-var GITHUB_REF=refs/heads/main INPUT_PYTHON-VERSION=3.7 GITHUB_ACTIONS=true GITHUB_WORKSPACE=/github/workspace GITHUB_TOKEN= CI=true GITHUB_ACTION=1 ACT=true GITHUB_ACTOR=nektos/act RUNNER_TOOL_CACHE=/opt/hostedtoolcache RUNNER_OS=Linux RUNNER_TEMP=/tmp]
+[test-set-env-var/test]   🐳  docker run image=act-actions-docker-local-set-env-name1:latest entrypoint=[] cmd=["3.7"]
+[test-set-env-var/test] Starting container: 7bf7caabe9000619746e098c5965037946c1bc7bdf10fdab0d70f178ff8cce17
+[test-set-env-var/test]   | first-param=3.7
+[test-set-env-var/test]   ⚙  ::set-env:: name1=value1
+[test-set-env-var/test] Started container: 7bf7caabe9000619746e098c5965037946c1bc7bdf10fdab0d70f178ff8cce17
+[test-set-env-var/test] Return status: 0
+[test-set-env-var/test] Removed container: 7bf7caabe9000619746e098c5965037946c1bc7bdf10fdab0d70f178ff8cce17
+[test-set-env-var/test]   ✅  Success - step2
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: newStepExecutor.func:- Run sc=&{RunContext:test-set-env-var/test Step:step2 Env:map[ACT:true CI:true GITHUB_ACTION:1 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_PYTHON-VERSION:3.7] Cmd:[] Action:0xc0001fa340} rc.StepResults=&{Success:true Outputs:map[]} rc.GetEnv=map[ACT:true name1:value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WiNK: call sc.setupEnv()(ctx)"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv rc.GetEnv()=map[ACT:true name1:value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv step.GetEnv()=map[INPUT_ENV-NAME:${{ env.name1 }} INPUT_ENV-VALUE:${{ runner.os }}-python-${{ env.name1 }}]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func:+ *********************"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func: rc.GetEnv()=map[ACT:true name1:value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func: step.GetEnv()=map[INPUT_ENV-NAME:${{ env.name1 }} INPUT_ENV-VALUE:${{ runner.os }}-python-${{ env.name1 }}]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func mergeMaps 2 rc, step"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func env=map[ACT:true INPUT_ENV-NAME:${{ env.name1 }} INPUT_ENV-VALUE:${{ runner.os }}-python-${{ env.name1 }} name1:value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate k=ACT v=true env[k]=true"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate env[k]=true"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate k=name1 v=value1 env[k]=value1"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate env[k]=value1"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate k=INPUT_ENV-NAME v=${{ env.name1 }} env[k]=${{ env.name1 }}"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Evaluating 'env['name1']' instead of 'env.name1'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: Evaluated val=undefined ret: val=\"\", false, err='<nil>'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate env[k]="
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate k=INPUT_ENV-VALUE v=${{ runner.os }}-python-${{ env.name1 }} env[k]=${{ runner.os }}-python-${{ env.name1 }}"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Evaluating 'runner['os']' instead of 'runner.os'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: Evaluated ret: 'runner['os']' val='Linux'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Evaluating 'env['name1']' instead of 'env.name1'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: Evaluated val=undefined ret: val=\"\", false, err='<nil>'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate env[k]=Linux-python-"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:05-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:05-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:05-08:00" level=debug msg="setupEnv => map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func:- ******************************"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:05-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:05-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: RunContext vmEnv rc.GetEnv=map[ACT:true name1:value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: RunContext.func:+ vmEnv call ################# vm.Set(\"env\", rc.GetEnv()=map[ACT:true name1:value1])"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: RunContext.func:- vmEnv"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: StepContext vmEnv sc.GetEnv=map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: StepContext.func:+ vmEnv call !!!!!!!!!!!!!!!!! vm.Set(\"env\", sc.Env=map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1])"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: StepContext.func:- vmEnv"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WiNK: done NewExpressionEvaluator()"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: newStepExecutor.func:+ Run &{RunContext:test-set-env-var/test Step:step3 Env:map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1] Cmd:[] Action:<nil>}"
+[test-set-env-var/test] ⭐  Run step3
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK:+ Executor: sc=&{RunContext:test-set-env-var/test Step:step3 Env:map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1] Cmd:[] Action:<nil>}"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupAction: sc=&{RunContext:test-set-env-var/test Step:step3 Env:map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1] Cmd:[] Action:<nil>} actionDir=/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-var actionPath="
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: runAction: sc=&{RunContext:test-set-env-var/test Step:step3 Env:map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1] Cmd:[] Action:<nil>}"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK:- Executor: sc=&{RunContext:test-set-env-var/test Step:step3 Env:map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1] Cmd:[] Action:<nil>}"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Read action &{set-env-var  Set an enviornemt variable map[env-name:{Environment variable name true } env-value:{Value to save in env-name true }] map[] {docker map[]  Dockerfile [] [${{ inputs.env-name }} ${{ inputs.env-value }}]} { }} from '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-var/action.yml'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="About to run action &{set-env-var  Set an enviornemt variable map[env-name:{Environment variable name true } env-value:{Value to save in env-name true }] map[] {docker map[]  Dockerfile [] [${{ inputs.env-name }} ${{ inputs.env-value }}]} { }}"
+time="2020-11-19T10:45:05-08:00" level=debug msg="type=2 actionDir=/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-var actionPath= Workdir=/home/wink/prgs/github-actions/tests/gha-test-set-env-var ActionCacheDir=/home/wink/.cache/act actionName=actions/docker-local-set-env-var containerActionDir=/github/workspace"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: newStepContainer sc=&{RunContext:test-set-env-var/test Step:step3 Env:map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1] Cmd:[] Action:0xc0004b4c30} cmd=[${{ inputs.env-name }} ${{ inputs.env-value }}] entryPoint=[]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:05-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:05-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: RunContext vmEnv rc.GetEnv=map[ACT:true name1:value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: RunContext.func:+ vmEnv call ################# vm.Set(\"env\", rc.GetEnv()=map[ACT:true name1:value1])"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: RunContext.func:- vmEnv"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: StepContext vmEnv sc.GetEnv=map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: StepContext.func:+ vmEnv call !!!!!!!!!!!!!!!!! vm.Set(\"env\", sc.Env=map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1])"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: StepContext.func:- vmEnv"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Evaluating 'inputs['env-name']' instead of 'inputs.env-name'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: Evaluated ret: 'inputs['env-name']' val='${{ env.name1 }}'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Evaluating 'env['name1']' instead of 'env.name1'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: Evaluated ret: 'env['name1']' val='value1'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Evaluating 'inputs['env-value']' instead of 'inputs.env-value'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: Evaluated ret: 'inputs['env-value']' val='${{ runner.os }}-python-${{ env.name1 }}'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Evaluating 'runner['os']' instead of 'runner.os'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: Evaluated ret: 'runner['os']' val='Linux'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Evaluating 'env['name1']' instead of 'env.name1'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: Evaluated ret: 'env['name1']' val='value1'"
+[test-set-env-var/test]   🐳  docker build -t act-actions-docker-local-set-env-var:latest /home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-var
+[test-set-env-var/test] Building image from '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-var'
+time="2020-11-19T10:45:05-08:00" level=debug msg="Creating archive for build context dir '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-var' with relative dockerfile 'Dockerfile'"
+[test-set-env-var/test] Creating image from context dir '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/actions/docker-local-set-env-var' with tag 'act-actions-docker-local-set-env-var:latest'
+[test-set-env-var/test] Step 1/4 : FROM alpine:3.10
+[test-set-env-var/test] 
+[test-set-env-var/test]  ---> be4e4bea2c2e
+[test-set-env-var/test] Step 2/4 : COPY entrypoint.sh /entrypoint.sh
+[test-set-env-var/test] 
+[test-set-env-var/test]  ---> Using cache
+[test-set-env-var/test]  ---> cb67b4c6569f
+[test-set-env-var/test] Step 3/4 : RUN chmod +x /entrypoint.sh
+[test-set-env-var/test] 
+[test-set-env-var/test]  ---> Using cache
+[test-set-env-var/test]  ---> e67ecb389166
+[test-set-env-var/test] Step 4/4 : ENTRYPOINT ["/entrypoint.sh"]
+[test-set-env-var/test] 
+[test-set-env-var/test]  ---> Using cache
+[test-set-env-var/test]  ---> 06f0de799a1b
+[test-set-env-var/test] Unable to handle line: {"aux":{"ID":"sha256:06f0de799a1b383a380484a8e2ef988aaff461367bbbc765786974f79e5aba26"}}
+[test-set-env-var/test] Successfully built 06f0de799a1b
+[test-set-env-var/test] Successfully tagged act-actions-docker-local-set-env-var:latest
+[test-set-env-var/test]   🐳  docker pull act-actions-docker-local-set-env-var:latest
+time="2020-11-19T10:45:05-08:00" level=debug msg="Image exists? true"
+[test-set-env-var/test]   🐳  docker create image=act-actions-docker-local-set-env-var:latest entrypoint=[] cmd=["value1" "Linux-python-value1"]
+[test-set-env-var/test] Created container name=act-test-set-e-2 id=371d316bd8ee02135adae18a4e53c9db7bd0e4496544168973b72e4f31777445 from image act-actions-docker-local-set-env-var:latest
+[test-set-env-var/test] ENV ==> [GITHUB_EVENT_PATH=/github/workflow/event.json INPUT_ENV-VALUE=Linux-python- ACT=true GITHUB_REPOSITORY=winksaville/gha-test-set-env-var GITHUB_ACTIONS=true HOME=/github/home GITHUB_RUN_ID=1 GITHUB_TOKEN= GITHUB_ACTOR=nektos/act GITHUB_RUN_NUMBER=1 GITHUB_REF=refs/heads/main GITHUB_EVENT_NAME=push GITHUB_WORKSPACE=/github/workspace name1=value1 INPUT_ENV-NAME= GITHUB_SHA=4608a5ed42654dca4d0336254d42646664f7e530 CI=true GITHUB_WORKFLOW=test-set-env-var GITHUB_ACTION=2 RUNNER_TOOL_CACHE=/opt/hostedtoolcache RUNNER_OS=Linux RUNNER_TEMP=/tmp]
+[test-set-env-var/test]   🐳  docker run image=act-actions-docker-local-set-env-var:latest entrypoint=[] cmd=["value1" "Linux-python-value1"]
+[test-set-env-var/test] Starting container: 371d316bd8ee02135adae18a4e53c9db7bd0e4496544168973b72e4f31777445
+[test-set-env-var/test]   ⚙  ::set-env:: value1=Linux-python-value1
+[test-set-env-var/test] Started container: 371d316bd8ee02135adae18a4e53c9db7bd0e4496544168973b72e4f31777445
+[test-set-env-var/test] Return status: 0
+[test-set-env-var/test] Removed container: 371d316bd8ee02135adae18a4e53c9db7bd0e4496544168973b72e4f31777445
+[test-set-env-var/test]   ✅  Success - step3
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: newStepExecutor.func:- Run sc=&{RunContext:test-set-env-var/test Step:step3 Env:map[ACT:true CI:true GITHUB_ACTION:2 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home INPUT_ENV-NAME: INPUT_ENV-VALUE:Linux-python- name1:value1] Cmd:[] Action:0xc0004b4c30} rc.StepResults=&{Success:true Outputs:map[]} rc.GetEnv=map[ACT:true name1:value1 value1:Linux-python-value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WiNK: call sc.setupEnv()(ctx)"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv rc.GetEnv()=map[ACT:true name1:value1 value1:Linux-python-value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv step.GetEnv()=map[]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func:+ *********************"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func: rc.GetEnv()=map[ACT:true name1:value1 value1:Linux-python-value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func: step.GetEnv()=map[]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func mergeMaps 2 rc, step"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func env=map[ACT:true name1:value1 value1:Linux-python-value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate k=ACT v=true env[k]=true"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate env[k]=true"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate k=name1 v=value1 env[k]=value1"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate env[k]=value1"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate k=value1 v=Linux-python-value1 env[k]=Linux-python-value1"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func Interpolate env[k]=Linux-python-value1"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:05-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:05-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:05-08:00" level=debug msg="setupEnv => map[ACT:true CI:true GITHUB_ACTION:3 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home name1:value1 value1:Linux-python-value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupEnv.func:- ******************************"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Loading slug from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Loading revision from git directory '/home/wink/prgs/github-actions/tests/gha-test-set-env-var/.git'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Found revision: 4608a5ed42654dca4d0336254d42646664f7e530\n"
+time="2020-11-19T10:45:05-08:00" level=debug msg="HEAD points to '4608a5ed42654dca4d0336254d42646664f7e530'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="HEAD matches refs/heads/main"
+time="2020-11-19T10:45:05-08:00" level=debug msg="using github ref: refs/heads/main"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: RunContext vmEnv rc.GetEnv=map[ACT:true name1:value1 value1:Linux-python-value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: RunContext.func:+ vmEnv call ################# vm.Set(\"env\", rc.GetEnv()=map[ACT:true name1:value1 value1:Linux-python-value1])"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: RunContext.func:- vmEnv"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: StepContext vmEnv sc.GetEnv=map[ACT:true CI:true GITHUB_ACTION:3 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home name1:value1 value1:Linux-python-value1]"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: StepContext.func:+ vmEnv call !!!!!!!!!!!!!!!!! vm.Set(\"env\", sc.Env=map[ACT:true CI:true GITHUB_ACTION:3 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home name1:value1 value1:Linux-python-value1])"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WIHK: StepContext.func:- vmEnv"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WiNK: done NewExpressionEvaluator()"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: newStepExecutor.func:+ Run &{RunContext:test-set-env-var/test Step:done Env:map[ACT:true CI:true GITHUB_ACTION:3 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home name1:value1 value1:Linux-python-value1] Cmd:[] Action:<nil>}"
+[test-set-env-var/test] ⭐  Run done
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK:+ Executor: sc=&{RunContext:test-set-env-var/test Step:done Env:map[ACT:true CI:true GITHUB_ACTION:3 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home name1:value1 value1:Linux-python-value1] Cmd:[] Action:<nil>}"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: setupShellCommand sc=&{RunContext:test-set-env-var/test Step:done Env:map[ACT:true CI:true GITHUB_ACTION:3 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home name1:value1 value1:Linux-python-value1] Cmd:[] Action:<nil>}"
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK:- Executor: sc=&{RunContext:test-set-env-var/test Step:done Env:map[ACT:true CI:true GITHUB_ACTION:3 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home name1:value1 value1:Linux-python-value1] Cmd:[] Action:<nil>}"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Wrote command 'echo Done' to 'workflow/3'"
+time="2020-11-19T10:45:05-08:00" level=debug msg="Writing entry to tarball workflow/3 len:9"
+[test-set-env-var/test] Extracting content to '/github/'
+[test-set-env-var/test] Exec command '[bash --noprofile --norc -eo pipefail /github/workflow/3]'
+[test-set-env-var/test]   | Done
+[test-set-env-var/test]   ✅  Success - done
+time="2020-11-19T10:45:05-08:00" level=debug msg="WINK: newStepExecutor.func:- Run sc=&{RunContext:test-set-env-var/test Step:done Env:map[ACT:true CI:true GITHUB_ACTION:3 GITHUB_ACTIONS:true GITHUB_ACTOR:nektos/act GITHUB_EVENT_NAME:push GITHUB_EVENT_PATH:/github/workflow/event.json GITHUB_REF:refs/heads/main GITHUB_REPOSITORY:winksaville/gha-test-set-env-var GITHUB_RUN_ID:1 GITHUB_RUN_NUMBER:1 GITHUB_SHA:4608a5ed42654dca4d0336254d42646664f7e530 GITHUB_TOKEN: GITHUB_WORKFLOW:test-set-env-var GITHUB_WORKSPACE:/github/workspace HOME:/github/home name1:value1 value1:Linux-python-value1] Cmd:[bash --noprofile --norc -eo pipefail /github/workflow/3] Action:<nil>} rc.StepResults=&{Success:true Outputs:map[]} rc.GetEnv=map[ACT:true name1:value1 value1:Linux-python-value1]"
+[test-set-env-var/test] Removed container: 9f4fa7ba59462636c91eaf0269ea49fe9ffdbd3961f639f234cd6514a377cdf9
+[test-set-env-var/test]   🐳  docker volume rm act-test-set-env-var-test

@@ -5,24 +5,28 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: ./actions/docker-local-set-env-var
-      with:
-        env-name: name1
-        env-value: value1
+      - name: step1
+        uses: actions/checkout@v2
 
-    - uses: ./actions/docker-local-set-env-var
-      with:
-        env-name: name2
-        env-value: ${{ env.name1 }}
+      - name: step2
+        uses: ./actions/docker-local-set-env-name1
+        with:
+          python-version: 3.7
 
-    - name: check
-      run: |
-        if [ "$name2" = "value1" ]; then
-          echo "name2 is value1"
-        else
-          echo "name2 is $name2, excepted value1"
-          exit 1
-        fi
+      - name: step3
+        uses: ./actions/docker-local-set-env-var
+        with:
+          env-name: ${{ env.name1 }}
+          env-value: ${{ runner.os }}-python-${{ env.name1 }}
 
-    - name: done
-      run: echo Done
+      #- name: check
+      #  run: |
+      #    if [ "$name2" = "value1" ]; then
+      #      echo "name2 is value1"
+      #    else
+      #      echo "name2 is $name2, excepted value1"
+      #      exit 1
+      #    fi
+
+      - name: done
+        run: echo Done

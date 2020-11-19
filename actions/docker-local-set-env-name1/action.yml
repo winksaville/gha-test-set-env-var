@@ -1,0 +1,11 @@
+name: 'set-env-name1'
+description: 'Set enviornemt variable name1 to valu1'
+inputs:
+  python-version:  # id of input
+    description: 'Python version'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.python-version }}
