@@ -1,0 +1,15 @@
+name: 'set-env-var'
+description: 'Set an enviornemt variable'
+inputs:
+  env-name:  # id of input
+    description: 'Environment variable name'
+    required: true
+  env-value:  # id of input
+    description: 'Value to save in env-name'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.env-name }}
+    - ${{ inputs.env-value }}
