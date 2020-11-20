@@ -12,12 +12,16 @@ jobs:
         uses: ./actions/docker-local-set-env-name1
         with:
           python-version: 3.7
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
       - name: step2
         uses: winksaville/gha-js-set-env-var@main
         with:
           env-name: ${{ env.name1 }}
           env-value: ${{ runner.os }}-python-${{ env.name1 }}
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
       - name: done
         run: echo Done
