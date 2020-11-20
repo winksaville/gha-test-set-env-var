@@ -11,19 +11,10 @@ jobs:
           python-version: 3.7
 
       - name: step2
-        uses: winksaville/action-set-env-var@main
+        uses: winksaville/gha-js-set-env-var@main
         with:
           env-name: ${{ env.name1 }}
           env-value: ${{ runner.os }}-python-${{ env.name1 }}
-      #- name: step2
-      #  uses: ./actions/docker-local-set-env-var
-      #  with:
-      #    env-name: ${{ env.name1 }}
-      #    env-value: ${{ runner.os }}-python-${{ env.name1 }}
-      #- name: step2
-      #  uses: allenevans/set-env@v2.0.0
-      #  with:
-      #    name: ${{ env.name1 }}
 
       - name: done
         run: echo Done
