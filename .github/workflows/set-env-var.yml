@@ -5,6 +5,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: step0
+        uses: actions/checkout@v2
+
       - name: step1
         uses: ./actions/docker-local-set-env-name1
         with:
