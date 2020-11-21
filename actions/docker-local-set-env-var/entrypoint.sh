@@ -8,6 +8,5 @@ if [ "$1" == "" ]; then
 	exit 1
 fi
 
-# TODO: when act supports $GITHUB_ENV change to
-#echo "$1=$2" >> $GITHUB_ENV
-echo "::set-env name=$1::$2"
+echo "$1=$2" >> $GITHUB_ENV
+#echo "::set-env name=$1::$2"
