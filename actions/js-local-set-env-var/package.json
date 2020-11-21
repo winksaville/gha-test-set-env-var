@@ -1,0 +1,20 @@
+{
+  "name": "js-set-env-var",
+  "version": "1.0.0",
+  "description": "Set environment variabe using js action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/winksaville/gha-js-setup-python.git"
+  },
+  "keywords": [],
+  "author": "Wink Saville <wink@saville.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}
