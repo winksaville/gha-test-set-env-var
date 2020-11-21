@@ -10,18 +10,21 @@ jobs:
 
       - name: step1
         uses: ./actions/docker-local-set-env-name1
-        with:
-          python-version: 3.7
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
+      ##This always works because loading a docker files
+      ##causes the environment variables to be rebuilt.
+      #- name: step2
+      #  uses: ./actions/docker-local-set-env-var
+      #  with:
+      #    env-name: ${{ env.name1 }}
+      #    env-value: ${{ runner.os }}-python-${{ env.name1 }}
+
+      #This only works if fix-issue-416 is in act.
       - name: step2
-        uses: winksaville/gha-js-set-env-var@main
+        uses: ./actions/js-local-set-env-var
         with:
           env-name: ${{ env.name1 }}
           env-value: ${{ runner.os }}-python-${{ env.name1 }}
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
       - name: done
         run: echo Done
